@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap%27');
+
+@font-face {
+    font-family: "San Francisco", sans-serif;
+    ;
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(238, 238, 238);
+}
+
+/* navbar */
+
+header {
+    /* position: relative; */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header #navbar {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    padding: 10px 10%;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+header #navbar img {
+    width: 7rem;
+    margin-left: 5%;
+}
+
+header #navbar ul li {
+    list-style-type: none;
+}
+
+header #navbar ul li a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(116, 193, 33);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5%;
+}
+
+header #navbar ul li a:hover {
+    background-color: rgb(244, 244, 244);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+#get-btn {
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    background-color: rgb(67, 67, 67);
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+#get-btn:hover {
+    color: rgb(116, 193, 33);
+    transition: all 0.4s ease 0s;
+    padding-right: 50px;
+    margin-right: -50px;
+    margin-left: 20px;
+    background: url("../resources/images/icons/download_icon.svg") no-repeat right;
+    background-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+}
+
+/* home */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+.welcome {
+    display: inline-flex;
+    font-size: 4rem;
+    font-family: "San Francisco", sans-serif;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+.welcome::after {
+    background-color: rgb(238, 238, 238);
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid black;
+    left: 0;
+    right: 0;
+    animation: typing 3s steps(28) forwards;
+}
+
+@keyframes typing {
+    90% {
+        left: 100%;
+        margin: 0 -10px 0 10px;
+        border-left: 2px solid black;
+
+
+    }
+
+    91% {
+        left: 100%;
+        margin: 0 -10px 0 10px;
+        border-left: 2px solid black;
+    }
+
+    100% {
+        width: 0%;
+        left: 100%;
+        margin: 0 -10px 0 10px;
+        border-left: 2px solid transparent;
+
+    }
+}
+
+
+.tagline {
+    display: inline-flex;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3%;
+    font-family: "San Francisco", sans-serif;
+
+}
+
+#copyright a {
+    color: black;
+    font-family: "San Francisco", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#copyright a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    padding-bottom: 6%;
+    filter: drop-shadow(20px 20px 6px rgba(0, 0, 0, 0.159));
+}
+
+#menu video {
+    border-radius: 10px;
+}
+
+#master {
+    color: rgb(54, 54, 54);
+}
+
+#key {
+    color: #74c121;
+}
+
+/* about app */
+.app {
+    padding: 4%;
+}
+
+#masterkey {
+    background-color: white;
+    font-family: "San Francisco", sans-serif;
+    line-height: 1.6;
+}
+
+#masterkey p {
+    padding: 5%;
+    font-size: 1rem;
+    text-align: right;
+    line-height: 2;
+}
+
+.circle {
+    border-radius: 50%;
+    float: right;
+    shape-outside: circle();
+    filter: drop-shadow(1px 1px 50px rgba(0, 0, 0, 0.15));
+    margin-top: 1rem;
+    margin-left: 6%;
+    margin-right: 4%;
+}
+
+.circle img {
+    width: 250px;
+    height: 250px;
+}
+
+/* about */
+#about {
+    background-color: rgb(238, 238, 238);
+}
+
+#about ul {
+    list-style: none;
+}
+
+#about ul li {
+    display: flex;
+}
+
+.image img {
+    width: 550px;
+    height: 330px;
+}
+
+.para {
+    font-family: "San Francisco", sans-serif;
+    color: rgb(98, 98, 98);
+    line-height: 1.9;
+}
+
+.heading {
+    font-size: 1.8rem;
+    color: rgb(69, 66, 66);
+}
+
+.paragraph {
+    font-size: 1.3rem;
+    color: rgb(98, 98, 98);
+}
+
+#right {
+    flex-direction: row-reverse;
+}
+
+#bottom {
+    margin-top: 2%;
+}
+
+#left-img {
+    margin-top: 10%;
+    margin-left: 8%;
+    filter: drop-shadow(20px 20px 8px rgba(7, 7, 7, 0.15));
+}
+
+#left-para {
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: left;
+}
+
+#right-img {
+    margin-right: 10%;
+    margin-top: 10%;
+    filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.15));
+}
+
+#right-para {
+    margin-top: 12%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+#bottom-img {
+    margin-top: 2%;
+    margin-left: 8%;
+    filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.15));
+}
+
+#bottom-para {
+    margin-top: 6%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+#contribute {
+    background-color: white;
+    font-family: "San Francisco", sans-serif;
+}
+
+.container {
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row-reverse; */
+    justify-content: space-around;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    justify-content: center;
+}
+
+.head-masterkey {
+    font-weight: bold;
+}
+
+.con {
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.mas{
+    color: #383838;
+}
+
+#git {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 10%;
+    margin-right: 10%;
+    padding: 5% 0%;
+    padding-left: 8%;
+    width: 10rem;
+    border: none;
+    background-color: rgb(35, 35, 35);
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+#git:hover {
+    cursor: pointer;
+    box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.18);
+
+}
+
+#git img {
+    width: 20%;
+    padding: 0 3%;
+    padding-left: 1%;
+}
+
+/* downloads */
+#download {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.box {
+    margin: 0% 15%;
+}
+
+.box a {
+    background-color: rgb(232, 231, 231);
+    padding: 6rem 4rem;
+    padding-bottom: 12%;
+    padding-top: 15%;
+    text-decoration: none;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box a:hover {
+    transition: all 0.3s ease 0s;
+    background-color: rgb(224, 224, 224);
+    cursor: pointer;
+}
+
+
+
+#windows .box {
+    margin-bottom: -1rem;
+}
+
+#win {
+    margin-top: 25%;
+}
+
+#lin {
+    margin-top: 25%;
+}
+
+#lin {
+    color: rgb(59, 59, 59);
+    font-weight: bold;
+    font-family: "San Francisco", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20%;
+}
+
+#win {
+    color: rgb(59, 59, 59);
+    font-weight: bold;
+    font-family: "San Francisco", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20%;
+}
+
+.download-btn {
+    margin-top: 20%;
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    padding: 10% 15%;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(0, 115, 255);
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: rgb(0, 103, 229);
+    transition: all 0.3s ease 0s;
+}
+
+
+/* contact form */
+.contactus {
+    background-color: rgb(255, 255, 255);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+#iframe {
+    /* width="640px" height="550px" */
+    width: 640px;
+    height: 550px;
+}
+
+
+
+/* footer */
+footer {
+    background-color: rgb(209, 209, 209);
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div span {
+    color: rgb(0, 0, 0);
+    font-family: "San Francisco", sans-serif;
+    font-size: 1.2rem;
+}
+
+.copy {
+    width: 50%;
+}
+
+.icon {
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.icon img {
+    width: 6%;
+    padding: 0 2%;
+}
+
+.icon img:hover {
+    cursor: pointer;
+}
+
+
+/* linux-installation */
+#go-btn {
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    background-color: rgb(67, 67, 67);
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+#go-btn:hover {
+    color: rgb(116, 193, 33);
+    transition: all 0.4s ease 0s;
+    padding-left: 50px;
+    margin-left: -50px;
+    margin-right: 20px;
+    background: url("../resources/images/icons/arrow_icon.svg") no-repeat left;
+    background-size: 1.8rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+}
+
+.thanks {
+    display: flex;
+    justify-content: center;
+}
+
+.thanks span {
+    background-color: rgb(117, 185, 117);
+    margin-top: 2%;
+    padding: 2% 5%;
+    border: 2px solid rgb(31, 198, 31);
+    border-radius: 5px;
+    color: white;
+    font-family: "San Francisco", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mig {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+
+/* steps */
+.step {
+    margin: 2%;
+    margin-left: 4%;
+    padding: 3%;
+    padding-left: 5%;
+}
+
+.steps ol {
+    font-family: "San Francisco", sans-serif;
+    list-style: none;
+}
+
+.step li {
+    font-weight: bold;
+    font-size: 1.6rem;
+
+}
+
+/* 
+.step li span {
+    font-weight: 600; 
+} */
+
+.com {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1% 2%;
+    border: none;
+    background-color: rgb(220, 220, 220);
+    border-radius: 5px;
+    margin: 10% 6%;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.prompt {
+    color: green;
+    font-weight: bold;
+}
+
+.command {
+    margin-top: 3%;
+}
+
+.description {
+    font-size: 1.4rem;
+    padding-left: 7%;
+    text-align: justify;
+    margin-top: 2%;
+    line-height: 1.6;
+}
+
+.cd {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+
+.unzip {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+/* windows */
+.warning {
+    margin: 3% 6%;
+    display: flex;
+
+}
+
+.warning img {
+    width: 50%;
+}
+
+#wprotect img {
+    width: 40%;
+    padding-right: 3%;
+}
+
+#arrow {
+font-weight: bold;
+}
+
+#keep {
+font-weight: bold;
+}
+
+#extract {
+font-weight: bold;
+}
+
+#warn {
+font-weight: bold;
+}
+
+#more {
+    text-decoration: underline;
+font-weight: bold;
+}
+
+#run {
+font-weight: bold;
+}
+
+#des{
+    font-size: 1rem;
+}
