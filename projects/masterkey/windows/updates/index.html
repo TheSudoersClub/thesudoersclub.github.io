@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MasterKey | Windows update log</title>
+    <style>
+        @font-face {
+            font-family: "San Francisco";
+            font-weight: 400;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "San Francisco", sans-serif;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgb(26, 26, 26);
+            color: white;
+            padding: 3% 5%;
+        }
+
+        #no_updates_yet {
+            margin-top: 2%;
+            margin-left: 2%;
+        }
+
+        table,
+        th,
+        tr,
+        td {
+            font-size: 1.2rem;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 90%;
+        }
+
+        table td {
+            width: 100px;
+            word-wrap: break-word;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        .date {
+            width: 30%;
+        }
+
+        .update {
+            width: 50%;
+        }
+
+        .downloadbtn {
+            width: 20%;
+        }
+
+        #downloadButton {
+            padding: 5% 10%;
+            border: none;
+            background-color: rgb(0, 98, 255);
+            color: white;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 15px;
+            margin-top: 8%;
+            margin-bottom: 8%;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        #downloadButton:hover {
+            background-color: rgb(4, 92, 235);
+        }
+
+        .downloadButtonDisabled {
+            padding: 5% 10%;
+            border: none;
+            background-color: rgb(0, 98, 255);
+            color: white;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 15px;
+            margin-top: 8%;
+            margin-bottom: 8%;
+
+            opacity: 0.50;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MasterKey | Windows update log</h1>
+    </header>
+
+    <!-- <p id="no_updates_yet">No updates yet.</p> -->
+
+    <main>
+        <table>
+
+            <!-- Headings -->
+            <tr>
+                <th class="date">Date</th>
+                <th class="description">Update</th>
+                <th class="downloadbtn">Download</th>
+            </tr>
+
+            <!-- Update 2 -->
+            <tr>
+                <!-- date -->
+                <td>15 June 2022</td>
+
+                <!-- description -->
+                <td class="updateDescription">
+                    MasterKey v1.1
+                </td>
+
+                <!-- download button -->
+                <td><a href="https://github.com/TheSudoersClub/thesudoersclub.github.io/blob/main/projects/masterkey/resources/program-files/windows/masterkey.zip?raw=true"
+                        download="masterkey.zip"><button type="button" id="downloadButton">Download</button></a></td>
+            </tr>
+
+            <!-- Update 1 -->
+            <!-- <tr> -->
+                <!-- date -->
+                <!-- <td>12 June 2022</td> -->
+
+                <!-- description -->
+                <!-- <td class="updateDescription">
+                    this is an update
+                </td> -->
+
+                <!-- download button -->
+                <!-- <td><a href="resources/program-files/windows/masterkey.zip" download="masterkey.zip"><button
+                            type="button" class="downloadButtonDisabled" disabled>Download</button></a></td> -->
+            <!-- </tr> -->
+
+        </table>
+    </main>
+
+</body>
+
+</html>
