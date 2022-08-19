@@ -61,11 +61,16 @@
         }
 
         .date {
-            width: 30%;
+            width: 25%;
+        }
+
+        .version {
+            width: 10%;
         }
 
         .update {
             width: 50%;
+
         }
 
         .downloadbtn {
@@ -103,6 +108,18 @@
 
             opacity: 0.50;
         }
+
+        .features {
+            padding: 6px 0;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .features ul {
+            text-align: left;
+        }
     </style>
 </head>
 
@@ -119,6 +136,7 @@
             <!-- Headings -->
             <tr>
                 <th class="date">Date</th>
+                <th class="version">version</th>
                 <th class="description">Update</th>
                 <th class="downloadbtn">Download</th>
             </tr>
@@ -126,11 +144,20 @@
             <!-- Update 2 -->
             <tr>
                 <!-- date -->
-                <td>15 June 2022</td>
+                <td>19 August 2022</td>
+                <!-- version -->
+                <td>v1.2</td>
 
                 <!-- description -->
                 <td class="updateDescription">
-                    MasterKey v1.1
+                    <div class="features">
+                        <ul>
+                            <li>Email notifications</li>
+                            <li>Stronger encryption</li>
+                            <li>Bug fixes</li>
+                        </ul>
+                    </div>
+
                 </td>
 
                 <!-- download button -->
@@ -139,19 +166,22 @@
             </tr>
 
             <!-- Update 1 -->
-            <!-- <tr> -->
+            <tr>
                 <!-- date -->
-                <!-- <td>12 June 2022</td> -->
+                <td>15 June 2022</td>
+
+                <!-- version -->
+                <td>v1.1</td>
 
                 <!-- description -->
-                <!-- <td class="updateDescription">
-                    this is an update
-                </td> -->
+                <td class="updateDescription">
+                    Initial release
+                </td>
 
                 <!-- download button -->
-                <!-- <td><a href="resources/program-files/windows/masterkey.zip" download="masterkey.zip"><button
-                            type="button" class="downloadButtonDisabled" disabled>Download</button></a></td> -->
-            <!-- </tr> -->
+                <td><a href="resources/program-files/windows/masterkey.zip" download="masterkey.zip"><button
+                            type="button" class="downloadButtonDisabled" disabled>Download</button></a></td>
+            </tr>
 
         </table>
     </main>
