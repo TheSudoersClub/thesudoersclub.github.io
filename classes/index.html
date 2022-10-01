@@ -2,43 +2,197 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Sudoers Classes</title>
-    <style>
-        * {
-            /* outline: 1px solid red; */
-            margin: 0;
-            padding: 0;
-        }
-
-        section{
-            background: black;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .text{
-            width: 80%;
-        }
-
-        h1{
-            color: rgb(0, 255, 0);
-            text-shadow: 1px 1px 50px rgba(0, 255, 0, 1);
-            font-family: 'Courier New', Courier, monospace;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, minium-scale=1.0, maximum-scale=1.0, user-scalable = no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <title>The Sudoers Classes</title>
 </head>
 
 <body>
-    <section id="main">
-        <div class="text">
-            <h1>Will be Live on Saturday 01 October 2022 12:00:00 PM IST</h1>
-        </div>
-    </section>
+  <header>
+    <nav id="navbar">
+      <div id="left-list">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#contact-us-section">Contact Us</a></li>
+        </ul>
+      </div>
+      <div id="right-list">
+        <ul>
+          <li><a href="entrance-test/">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="home">
+    <div id="image">
+      <img src="images/The_Sudoers_Classes_Profile.png" alt="" />
+    </div>
+  </section>
+
+  <section id="test">
+    <div id="et-tittle">
+      <h1>ENTRANCE TEST</h1>
+      <p>
+        Entrance test is conducted for filtering out the entries and only
+        selecting ambitious kids who deserve this quality of education.
+        Responses will be recorded and you will be notified via email a link
+        to our discord server if you are selected.
+      </p>
+      <a href="entrance-test/">Start Test</a>
+    </div>
+  </section>
+
+  <section id="courses-content">
+    <div id="content-title">
+      <h1>What will be covered</h1>
+      <h2>(Your Complete Diploma Syllabus)</h2>
+      <h3>(Stay 1 semester ahead of the school)</h3>
+    </div>
+    <div class="courses-content-image">
+      <img src="images/syllabus_tree.png" alt="" />
+    </div>
+  </section>
+
+  <section id="secrete">
+    <div class="btn-secrete">
+      <button id="secrete-btn" onclick="secrete();">
+        Click here for a secrete
+      </button>
+    </div>
+
+    <div id="secrete-hidden">
+      <p>
+        Actually vishay kasay na MSBTE syllabus seems too outdated and not
+        useful today in the industry. By joining this organization you will be
+        learning both the good old syllabus stuff and the newer, making you a
+        better programmer and ready for the industry. Study to learn, exams
+        are just a part of it.
+      </p>
+    </div>
+  </section>
+
+  <section id="tutors">
+    <div class="tutors-title">
+      <h1>Tutors</h1>
+    </div>
+    <div class="tutors-section-content">
+      <div class="ayush">
+        <h2>Ayush Ahirrao</h2>
+        <a class="gray" href="https://ayushahirrao.github.io" target="_blank">https://ayushahirrao.github.io</a>
+        <p class="pgray">MVPS's RSM Polythinic Nashik | SYCM</p>
+      </div>
+      <div class="shriram">
+        <h2>Shriram Khandbahale</h2>
+        <a class="gray" href="https://shriramkhandbahale.github.io"
+          target="_blank">https://shriramkhandbahale.github.io</a>
+        <p class="pgray">MVPS's RSM Polytechnic Nashik | SYCM</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="discord">
+    <div class="dicord-content">
+      <div class="logo_tag">
+        <img src="images/icons/discord_logo.png" alt="discord_logo" />
+        <h2>In touch all the time</h2>
+      </div>
+      <div class="discord-tagline">
+        <h2><span id="Competition">Competition</span> Collaboration</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-should-you-join">
+
+    <div>
+      <p id="contact-us-section">
+        Peer learning | A new perspective for education | (
+        <strike>sir</strike> bro)
+      </p>
+    </div>
+    <div class="why">
+      <div class="why-image">
+        <img src="images/peer_learning.jpg" alt="firend" />
+      </div>
+      <div class="why-content">
+        <p>
+          We believe... <br> Actually we don't believe any thing just join our classes and you will know for yourself.
+          <br> We promise you will not regrate this decision and your future self will thank you for it. We grantee, We
+          will provide the highest quality of education that no other institution does, promoting informal way of learning
+          by both online and offline means.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contactus">
+    <div class="contact">
+      <iframe src="contact/index.html" style="overflow: scroll" frameborder="0" marginheight="0" marginwidth="0"
+        id="iframe">Loading…</iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div id="footer-class-info">
+      <div id="fees">
+        <h2 class="footer-h-secondary">Fees</h2>
+        <p>Rs. 500/month (all subjects included)</p>
+      </div>
+      <div id="time">
+        <h2 class="footer-h-secondary">Time</h2>
+        <p>7:00 am to 9:30 am</p>
+      </div>
+      <div id="class-address">
+        <h2 class="footer-h-secondary">Address</h2>
+
+        <address>
+          Flat no. 1, Sujata Apartment, Mahatmanager, Nashik - 422007
+        </address>
+      </div>
+    </div>
+    <hr />
+    <div id="footer-copyright">
+      <div class="copy">
+        <span>&#169; 2022 The Sudoers Club</span>
+      </div>
+      <div class="icon">
+        <img onclick="openSite();" src="images/icons/website_icon.svg" alt="website" />
+        <img style="opacity: 0.9" onclick="openYT();" src="images/icons/youtube_logo.svg" alt="YouTube" />
+        <img onclick="opengit();" src="images/icons/github_icon.svg" alt="github" />
+      </div>
+    </div>
+  </footer>
+  <script>
+    function secrete() {
+      let element = document.getElementById("secrete-hidden");
+      element.setAttribute("id", "secrete-content");
+
+      let btn = document.getElementById("secrete-btn");
+      btn.style.display = "none";
+
+      element.style.transition = "1s ease all 0s";
+    }
+
+    function opengit() {
+      window.open("https://github.com/TheSudoersClub");
+    }
+    function openYT() {
+      window.open("https://www.youtube.com/channel/UCpNcS8vIKtLrkxE_n3qeccA");
+    }
+    function openSite() {
+      window.open("https://thesudoersclub.github.io");
+    }
+    function openrep() {
+      window.open(
+        "https://github.com/thesudoersclub/MasterKey/",
+        "target= _blank"
+      );
+    }
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,742 @@
+@font-face {
+  font-family: "San Francisco", sans-serif;
+
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+  /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  font-family: "San Francisco", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "San Francisco", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+#navbar {
+  background: rgb(0, 0, 0);
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-list {
+  width: 15%;
+  padding: 1rem;
+}
+
+#left-list ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#left-list ul li {
+  transition: 0.3s ease 0s all;
+}
+
+#left-list ul li:hover {
+  text-decoration: underline;
+}
+
+#right-list {
+  width: 15%;
+  padding: 1rem;
+}
+
+#right-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#right-list ul li a {
+  background-color: rgb(0, 94, 255);
+  padding: 15% 45%;
+  border: none;
+  border-radius: 30px;
+  transition: 0.3s ease 0s all;
+}
+
+#right-list ul li a:hover {
+  background-color: rgb(0, 76, 255);
+  cursor: pointer;
+}
+
+#right-list ul li a:not(:hover) {
+  transition: 0.3s ease 0s all;
+}
+
+#home {
+  height: 33rem;
+  background: rgba(0, 0, 0, 0.7) url("../images/backdrop.jpg") repeat fixed 100%;
+  background-size: cover;
+  background-position: right;
+  /* filter: brightness(20%) */
+  background-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 4rem;
+}
+
+#image {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2% 0%;
+  flex-direction: row;
+}
+
+#image img {
+  width: 35rem;
+}
+
+#content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  animation-name: tagline;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  float: unset;
+}
+
+/* Test Section */
+
+#test {
+  background: whitesmoke;
+}
+
+#et-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#et-tittle h1 {
+  font-size: 2rem;
+  margin-top: 4%;
+}
+
+#et-tittle p {
+  width: 70%;
+  color: grey;
+  margin: 2%;
+}
+
+#et-tittle a {
+  border: none;
+  padding: 1% 3%;
+  background: rgb(0, 94, 255);
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 4%;
+  transition: 0.3s ease all 0s;
+}
+
+#et-tittle a {
+  text-decoration: none;
+  background-color: rgb(0, 94, 255);
+  ;
+  color: white;
+  border: none;
+
+}
+
+#et-tittle a:hover {
+  background-color: rgb(0, 72, 255);
+  cursor: pointer;
+}
+
+#et-tittle a button:hover {
+  background-color: rgb(0, 72, 255);
+  cursor: pointer;
+}
+
+/* Content */
+
+#content-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#content-title h1 {
+  margin-top: 2%;
+  font-size: 2rem;
+}
+
+#content-title h3 {
+  margin-bottom: 1rem;
+}
+
+.courses-content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.courses-content-image img {
+  width: 80%;
+  /* height: px; */
+  object-fit: contain;
+  /* outline: 1px solid red; */
+}
+
+/* secrete */
+#secrete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#secrete-hidden {
+  display: none;
+}
+
+#secrete-content {
+  color: white;
+  background-color: rgb(44, 44, 44);
+  /* transition: 5s ease all 0s; */
+  padding: 2rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn-secrete {
+  margin: 3rem 0;
+}
+
+.btn-secrete button {
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background: rgb(139, 0, 0);
+}
+
+.btn-secrete button:hover {
+  cursor: pointer;
+}
+
+/* Tutors */
+
+#tutors {
+  background: whitesmoke;
+  /* display: flex; */
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+
+.tutors-section-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tutors-section-content div {
+  background: rgb(233, 233, 233);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  /* margin: % ; */
+  padding: 2% 8%;
+  /* outline: 1px solid red; */
+}
+
+.tutors-section-content div a p {
+  color: rgb(158, 158, 158);
+}
+
+.tutors-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin-left: 8.5rem;
+  font-size: 1.5rem;
+}
+
+.gray {
+  color: rgb(80, 80, 80);
+}
+
+.pgray {
+  color: rgb(35, 35, 35);
+}
+
+/* discord */
+
+#discord {
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.6) url("../images/discord.png") repeat fixed 100%;
+  background-size: cover;
+  background-position: right;
+  /* filter: brightness(20%) */
+  background-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dicord-content {
+  /* display: flex; */
+}
+
+.logo_tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_tag h2 {
+  font-size: 3rem;
+  text-shadow: 1px 1px 50px rgba(255, 255, 2555, 0.8);
+  margin-left: 10px;
+}
+
+.dicord-content img {
+  width: 100px;
+}
+
+.dicord-content h2 {
+  color: white;
+  /* font-size: 3rem; */
+  /* text-shadow: 1px 1px 25px rgba(255, 255, 2555, 0.8); */
+}
+
+.discord-tagline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discord-tagline #Competition {
+  text-decoration: line-through;
+}
+
+/* why-should-you-join */
+
+#why-should-you-join {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#why-should-you-join p {
+  padding-top: 1rem;
+  text-align: center;
+  color: rgb(94, 94, 94);
+}
+
+.why {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.why-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.why-image img {
+  width: 15rem;
+}
+
+.why-content {
+  width: 50%;
+}
+
+/* contact form */
+.contactus {
+  background-color: rgb(255, 255, 255);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 4% 5%;
+  align-items: center;
+  vertical-align: middle;
+}
+
+#iframe {
+  /* width="640px" height="550px" */
+  width: 640px;
+  height: 550px;
+}
+
+/* footer */
+footer {
+  background-color: whitesmoke;
+}
+
+#footer-class-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.footer-h-secondary {
+  font-size: 1.1rem;
+}
+
+#footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.copy {
+  width: 50%;
+}
+
+.copy span {
+  font-size: 1.2rem;
+}
+
+.icon {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+}
+
+.icon img {
+  width: 6%;
+  padding: 0 2%;
+}
+
+.icon img:hover {
+  cursor: pointer;
+}
+
+@keyframes tagline {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+
+    background: transparent;
+  }
+
+  21% {
+    background: white;
+    background-size: 0%;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+
+  #left-list {
+    /* padding: 4rem; */
+    width: 25%;
+  }
+
+  #right-list {
+    /* padding: 4rem; */
+    width: 25%;
+  }
+
+  #image img {
+    width: 30rem;
+  }
+
+  #et-tittle h1 {
+    font-size: 1.7rem;
+  }
+
+  #et-tittle p {
+    font-size: 1rem;
+  }
+
+  #content-title h1 {
+    font-size: 1.7rem;
+  }
+
+  #content-title h2 {
+    font-size: 1.3rem;
+  }
+
+  #content-title h3 {
+    font-size: 1.1rem;
+  }
+
+  .btn-secrete button {
+    padding: 0.8rem 1.8rem;
+  }
+
+  .tutors-title {
+    font-size: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .tutors-section-content {
+    flex-direction: column;
+  }
+
+  .tutors-section-content div {
+    margin: 2rem;
+    padding: 1.5rem 4rem;
+  }
+
+
+
+}
+
+@media only screen and (max-width:700px) {
+  #left-list {
+    /* padding: 4rem; */
+    width: 40%;
+  }
+
+  #right-list {
+    /* padding: 4rem; */
+    width: 40%;
+  }
+
+  #home {
+    height: 30rem;
+    padding-left: 2rem;
+
+  }
+
+  #image img {
+    width: 20rem;
+  }
+
+  #et-tittle h1 {
+    font-size: 1.4rem;
+  }
+
+  #et-tittle p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  #et-tittle a {
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+  }
+
+  #content-title h1 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+
+  #content-title h2 {
+    font-size: 1.1rem;
+  }
+
+  #content-title h3 {
+    font-size: 0.9rem;
+  }
+
+  .btn-secrete button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .tutors-section-content div {
+    margin: 2rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .tutors-section-content div h2 {
+    font-size: 1.3rem;
+  }
+
+  .tutors-section-content div a {
+    font-size: 1rem;
+  }
+
+  .tutors-section-content div p {
+    font-size: 1rem;
+  }
+
+  .dicord-content h2 {
+    font-size: 1.7rem;
+  }
+
+  .discord-tagline h2 {
+    font-size: 1.3rem;
+  }
+
+  .logo_tag img {
+    width: 4rem;
+  }
+
+  #secrete-content p {
+    font-size: 0.8rem;
+    line-height: 1.3;
+    padding: 0 3rem;
+  }
+
+  .why-image img {
+    width: 12rem;
+  }
+
+  .why-content{
+    font-size: 0.9rem;
+  }
+  .contact{
+    padding-bottom: 0;
+  }
+
+  #time {
+    margin: 0 2rem;
+  }
+
+  .icon img {
+    width: 1.4rem;
+  }
+}
+
+
+@media only screen and (max-width:550px) {
+  #left-list {
+    /* padding: 4rem; */
+    width: 50%;
+  }
+
+  #right-list {
+    /* padding: 4rem; */
+    width: 50%;
+  }
+
+  #home {
+    height: 26rem;
+    padding-left: 2rem;
+
+  }
+
+  #image img {
+    width: 15rem;
+  }
+
+  #et-tittle h1 {
+    font-size: 1.2rem;
+  }
+
+  #et-tittle p {
+    font-size: 0.6rem;
+    line-height: 1.2;
+  }
+
+  #et-tittle a {
+    padding: 0.5rem 1.3rem;
+    border-radius: 30px;
+    font-size: 1rem;
+  }
+
+  #content-title h1 {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  #content-title h2 {
+    font-size: 0.8rem;
+  }
+
+  #content-title h3 {
+    font-size: 0.7rem;
+  }
+
+  .btn-secrete button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .tutors-title {
+    font-size: 1.3rem;
+  }
+
+  .tutors-section-content div {
+    margin: 1.5rem;
+    padding: 1.3rem 2.5rem;
+  }
+
+  .tutors-section-content div h2 {
+    font-size: 1.1rem;
+  }
+
+  .tutors-section-content div a {
+    font-size: 0.8rem;
+  }
+
+  .tutors-section-content div p {
+    font-size: 0.8rem;
+  }
+
+  .why-image img {
+    width: 9rem;
+  }
+
+  .why-content {
+    font-size: 0.7rem;
+  }
+
+  .why{
+    margin: 2rem 1rem;
+  }
+
+  #why-should-you-join div p {
+    padding: 1rem;
+  }
+
+  .copy {
+    width: 60%;
+
+  }
+
+  .copy span {
+    font-size: 1rem;
+  }
+
+  .icon img {
+    width: 1.4rem;
+  }
+
+}
