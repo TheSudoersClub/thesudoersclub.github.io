@@ -1,0 +1,294 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #101010;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  padding: 30px 40px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background: rgba(56, 56, 56, 0.15);
+  border: none;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.choice div {
+  margin: 20px;
+  transform: scale(1.25);
+}
+
+.choice button {
+  border: none;
+  width: 200px;
+  height: 50px;
+
+  background: rgba(183, 0, 255, 0.8);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.choice button:hover {
+  background: rgba(133, 1, 185, 0.8);
+  cursor: pointer;
+}
+
+.join-link-prompt {
+  display: none;
+  background: rgba(56, 56, 56, 0.15);
+  position: absolute;
+  width: 450px;
+  padding: 30px 40px;
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  animation-name: OnLoad;
+  animation-duration: 1s;
+
+  transform: scale(1.25);
+}
+
+.join-link-prompt label {
+  font-weight: bold;
+  color: rgba(183, 0, 255, 0.8);
+}
+
+.join-link-prompt input {
+  margin-top: 20px;
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  background: rgb(27, 27, 27);
+  /* box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15); */
+  color: white;
+  outline: none;
+  caret-color: aqua;
+  border-radius: 5px;
+  /* 
+  animation-name: shake;
+  animation-duration: 1s; */
+}
+
+#invalid-link {
+  display: none;
+  margin-top: 10px;
+  color: rgb(131, 0, 0);
+  font-style: italic;
+}
+
+.create-room-prompt {
+  display: none;
+  background: rgba(56, 56, 56, 0.15);
+  position: absolute;
+  width: 450px;
+  padding: 30px 40px;
+  border: none;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  animation-name: OnLoad;
+  animation-duration: 1s;
+}
+
+.create-room-prompt span {
+  display: block;
+  color: rgb(56, 56, 56);
+  margin-top: 5px;
+}
+
+.create-room-prompt .processing_animation_element {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border-right: solid 10px aqua;
+  border-bottom: solid 10px rgb(56, 56, 56);
+  border-left: solid 10px rgb(56, 56, 56);
+  border-top: solid 10px rgb(56, 56, 56);
+  animation: processing 1s infinite;
+}
+
+.generate-invite-link{
+  animation-name: delay;
+  animation-duration: 1s;
+}
+
+.create-room-invite-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.copy-link {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-link img {
+  width: 30px;
+  filter: invert(0.2);
+}
+
+.copy-link:hover {
+  cursor: pointer;
+}
+
+.copied-message {
+  position: absolute;
+  top: 8px;
+  right: 70px;
+  background: rgb(41, 41, 41);
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 10px;
+  animation-name: copy-message;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  display: none;
+}
+.copied-message span{
+  color: white;
+}
+
+/* .copy-link::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  width: 10px;
+  height: 10px;
+  background: gray;
+  transform: rotate(45deg);
+  animation-name: delay;
+  animation-duration: 0.3s;
+  display: none;
+} */
+
+.div-invite-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-invite-link span {
+  background: rgba(56, 56, 56, 0.15);
+  padding: 12px 60px;
+  color: white;
+  border-radius: 8px;
+}
+
+.create-room-message {
+  margin-top: 15px;
+  color: rgb(56, 56, 56);
+  margin-bottom: 15px;
+}
+
+.create-room-join-btn {
+  margin-top: 10px;
+  /* outline: 1px solid aqua; */
+  animation-name: join-room-btn;
+  animation-duration: 1s;
+  transition: 1s;
+}
+
+.create-room-join-btn button {
+  border: none;
+  color: white;
+  background: rgba(183, 0, 255, 0.8);
+  padding: 12px 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.create-room-join-btn :hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 18px rgba(183, 0, 255, 0.5);
+}
+
+/* animations */
+@keyframes OnLoad {
+  0% {
+    translate: 0 20px;
+    opacity: 0.15;
+  }
+}
+
+@keyframes delay {
+  0% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes shake {
+  10% {
+    transform: translateX(-1px);
+  }
+  20% {
+    transform: translateX(1px);
+  }
+  30% {
+    transform: translateX(-1px);
+  }
+  40% {
+    transform: translateX(1px);
+  }
+}
+
+@keyframes processing {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes copy-message {
+  0% {
+    opacity: 0.15;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

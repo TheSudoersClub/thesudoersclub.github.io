@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>IncognitoTalk</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="choice">
+      <div class="join">
+        <button id="choice-btn-join">Join Room</button>
+      </div>
+
+      <div class="create">
+        <button id="choice-btn-create">Create Room</button>
+      </div>
+    </div>
+
+    <div class="join-link-prompt">
+      <label for="input-join-link-prompt">Enter Invite Link</label>
+      <input autofocus type="text" id="input-join-link-prompt">
+      <div id="invalid-link">
+        <span>Invalid Link</span>
+      </div>
+    </div>
+
+    <div class="create-room-prompt">
+      <div class="processing_animation">
+        <div class="processing_animation_element"></div>
+        <span>Creating room...</span>
+      </div>
+      <div class="generate-invite-link">
+        <div class="create-room-invite-link">
+          <div class="div-invite-link">
+            <span id="invite-link"></span>
+          </div>
+          <div class="copy-link">
+            <div class="copied-message"><span>Copied</span></div>
+            <img id="copy-icon" onclick="copyToClipboard('invite-link')" src="assets/copy-icon.svg" alt="copy">
+          </div>
+        </div>
+        <div class="create-room-message">
+          The server has been successfully established. Above is an invite link for your room through which other
+          participants can join.
+        </div>
+        <div class="create-room-join-btn">
+          <button id="create-room-join-button" onclick="joinRoom()">Join Room</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
