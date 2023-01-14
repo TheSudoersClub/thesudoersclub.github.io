@@ -7,131 +7,25 @@
 }
 
 body {
-  background: rgb(24, 24, 24);
-  margin: 2rem;
-  font-family: "Roboto", sans-serif;
+  background: black;
 }
 
 #root {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+img {
+  width: 100px;
+  filter: brightness(1) invert(1);
+  margin-bottom: 3rem;
 }
 
-.project-card {
-  height: 500px;
-  width: 350px;
-  background-color: rgb(31, 31, 31);
-  border: none;
-  border-radius: 8px;
-  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.15);
-}
-
-.project-card .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 100px;
-  margin-top: 30px;
-}
-
-.project-card .logo img {
-  width: 80px;
-}
-
-.project-card .project-title {
-  text-align: center;
-  height: 40px;
-}
-
-.project-card .project-title h1 {
-  color: white;
-}
-
-.project-card .project-description {
-  text-align: center;
-  margin-top: 20px;
-  margin-inline: 40px;
-  height: auto;
-}
-
-.project-card .project-description p {
-  color: rgb(255, 255, 255);
-  line-height: 1.5rem;
-}
-
-.project-card .view-project-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.project-card .view-project-button a button {
-  padding: 12px 16px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  background: aqua;
-  color: rgb(24, 24, 24);
-  font-weight: 700;
-  transition: 0.3s;
-}
-
-.project-card .view-project-button a button:hover {
-  cursor: pointer;
-  box-shadow: 1px 1px 20px rgba(0, 255, 255, 0.15);
-}
-
-/* animations  */
-
-#project1 {
-  animation-name: floatUp;
-  animation-duration: 1s;
-}
-#project2 {
-  animation-name: floatUp;
-  animation-duration: 1.5s;
-}
-#project3 {
-  animation-name: floatUp;
-  animation-duration: 2s;
-}
-
-/* animation definition  */
-@keyframes floatUp {
-  0% {
-    transform: translateY(20px);
-    opacity: 0.15;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* responsive  */
-@media screen and (max-width: 1025px) {
-  .container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .container {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  html {
-    transform: scale(0.95);
-  }
+#root h1,h3 {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(0, 255, 0);
+  text-shadow: 1px 1px 25px rgba(0, 255, 0, 0.8);
 }
