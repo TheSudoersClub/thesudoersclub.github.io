@@ -81,18 +81,20 @@ header {
 #hero {
   display: flex;
   background: $primary-color;
-// background: linear-gradient(45deg, $primary-color, rgb(151, 26, 223));
+  // background: linear-gradient(45deg, $primary-color, rgb(151, 26, 223));
   height: 22rem;
 
-  .hero__info{
+  .hero__info {
     margin-top: 2rem;
     margin-left: 2rem;
+    position: relative;
+    z-index: 1;
   }
 
   &__title__wrapper {
     &__title {
       font-size: 5rem;
-      margin-block: 1rem;    
+      margin-block: 1rem;
       span {
         color: $secondary-color;
       }
@@ -103,7 +105,11 @@ header {
     font-size: 18px;
     margin-bottom: 3rem;
     max-width: 40rem;
-    // outline: 1px solid black;
+
+    @media screen and (max-width: 1280px) {
+      max-width: 30rem;
+
+    }
   }
 
   button {
@@ -128,5 +134,10 @@ header {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  @media screen and (max-width: 888px){
+    // flex-direction: column;
+    display: block;
   }
 }
